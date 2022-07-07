@@ -298,6 +298,7 @@ footer h2 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    filter: blur(20px);
 }
 
 .content>div>img {
