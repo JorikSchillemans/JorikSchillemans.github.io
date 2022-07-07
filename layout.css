@@ -190,7 +190,8 @@ footer h2 {
 }
 
 #contact p a {
-    color: #fdc733;
+    font-weight: bold;
+    color: #131313;
 }
 
 #contact>p {
