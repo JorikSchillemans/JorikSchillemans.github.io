@@ -213,7 +213,7 @@ footer h2 {
 }
 
 #contact>p {
-    font-size: x-large;
+    font-size: large;
 }
 
 .dj {
@@ -370,6 +370,17 @@ footer h2 {
 
 /*--------------- animation ---------------*/
 
+/*--------------- tickets ---------------*/
+
+#tickets>a>img:hover {
+    border: 5px solid #fdc733;
+    border-radius: 5px;
+}
+
+#tickets>p>a {
+    color: #fdc733;
+    text-decoration: none;
+}
 
 /*------------ media queries ------------*/
 
