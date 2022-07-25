@@ -6,22 +6,20 @@
 }
 
 html {
-    height: 100%;
+    height: 100vh;
     scroll-behavior: smooth;
     font-display: optional;
 }
 
 body {
-    height: 100%;
+    height: 100vh;
     font-family: Ubuntu, Helvetica, Verdana, Arial, sans-serif;
     font-size: 11pt;
     line-height: 1.5;
-    background-color: black;
-    background: url(images/background.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url(images/background.webp) no-repeat center center fixed;
+    background-color: #171717;
     background-size: cover;
+    position: relative;
     color: #ffffff;
     margin: 0;
     padding: 0;
@@ -92,7 +90,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100vh;
 }
 
 #landing img {
@@ -108,7 +106,7 @@ header {
 
 .parallax {
     /* The image used */
-    background-image: url("images/Babylon\ Is\ Burning\ Man.png");
+    background-image: url("images/Babylon\ Is\ Burning\ Man.webp");
     /* Set a specific height */
     min-height: 100px;
     /* Create the parallax scrolling effect */
@@ -135,8 +133,10 @@ header {
     font-size: 18px;
 }
 
-#bottomButton:hover {
-    background-color: #555;
+@media(hover: hover) {
+    #bottomButton:hover {
+        background-color: #555;
+    }
 }
 
 #line-up,
@@ -360,7 +360,7 @@ footer h2 {
 
 [data-inviewport="slide-in"] {
     transition: 500ms;
-    transform: scale(0.7);
+    transform: scale(0.65);
 }
 
 [data-inviewport="slide-in"].is-inViewport {
@@ -488,12 +488,11 @@ footer h2 {
     }
     /* Position the close button (top right corner) */
     .overlay .closebtn {
-        padding: 0px;
-        height: 60px;
+        padding: 0px 27px;
         position: absolute;
         top: 0;
-        right: 22px;
-        font-size: 65px;
+        right: 0;
+        font-size: 55px;
     }
     /* ------ navbar ------- */
     #info {
@@ -568,11 +567,6 @@ footer h2 {
 @media screen and (max-height: 450px) {
     .overlay a {
         font-size: 20px
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
     }
 }
 
