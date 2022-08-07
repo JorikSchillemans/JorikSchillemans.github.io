@@ -191,13 +191,9 @@ footer h2 {
     border-spacing: 1em;
 }
 
-#line-up table tr td img {
+.blur {
     border-radius: 20%;
-    filter: blur(10px);
-}
-
-#line-up table tr td h1 {
-    filter: blur(7px);
+    filter: blur(25px);
 }
 
 #tickets {}
@@ -323,7 +319,6 @@ footer h2 {
     border-radius: 20%;
     width: 90%;
     max-width: 150px;
-    filter: blur(25px);
 }
 
 
