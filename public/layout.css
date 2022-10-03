@@ -1,6 +1,7 @@
 /* ------- main -------- */
 
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
 * {
     box-sizing: border-box;
 }
@@ -200,6 +201,21 @@ footer h2 {
 
 #sponsors {}
 
+.sponsorflex {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sponsorflex img {
+    margin: 20px;
+}
+
+#tbooke {
+    border-radius: 10px;
+}
+
 #contact iframe {
     max-width: 900px;
 }
@@ -348,6 +364,7 @@ footer h2 {
     0% {
         background-position-x: -500%;
     }
+
     100% {
         background-position-x: 500%;
     }
@@ -380,15 +397,18 @@ footer h2 {
 /*------------ media queries ------------*/
 
 @media screen and (max-width: 1300px) {
+
     /* ------ navbar ------- */
     .navigation img {
         left: 10px;
         height: 60px;
     }
+
     .navbar a {
         font-size: 1.8em;
         padding: 20px;
     }
+
     /* ------ navbar ------- */
 }
 
@@ -405,10 +425,12 @@ footer h2 {
         left: 5px;
         height: 50px;
     }
+
     .navbar a {
         font-size: 1.4em;
         padding: 20px;
     }
+
     .content>div {
         flex-direction: column;
         gap: 10px;
@@ -416,14 +438,17 @@ footer h2 {
 }
 
 @media screen and (max-width: 810px) {
+
     /* ------ navbar ------- */
     .navigation img {
         top: 15px;
         left: 15px;
     }
+
     .navbar a {
         display: none;
     }
+
     .navbar a.icon {
         font-size: 2em;
         display: block;
@@ -431,6 +456,7 @@ footer h2 {
         right: 10px;
         top: 0;
     }
+
     /* The Overlay (background) */
     .overlay {
         /* Height & width depends on how you want to reveal the overlay (see JS below) */
@@ -452,6 +478,7 @@ footer h2 {
         transition: 0.3s;
         /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
     }
+
     /* Position the content inside the overlay */
     .overlay-content {
         position: relative;
@@ -464,6 +491,7 @@ footer h2 {
         margin-top: 30px;
         /* 30px top margin to avoid conflict with the close button on smaller screens */
     }
+
     /* The navigation links inside the overlay */
     .overlay a {
         padding: 8px;
@@ -475,12 +503,14 @@ footer h2 {
         transition: 0.3s;
         /* Transition effects on hover (color) */
     }
+
     /* When you mouse over the navigation links, change their color */
     .overlay a:hover,
     .overlay a:focus {
         color: white;
         transform: scale(1.2);
     }
+
     /* Position the close button (top right corner) */
     .overlay .closebtn {
         padding: 0px 27px;
@@ -489,29 +519,35 @@ footer h2 {
         right: 0;
         font-size: 55px;
     }
+
     /* ------ navbar ------- */
     #info {
         flex-direction: column;
     }
+
     #contact>p {
         font-size: larger;
     }
+
     #line-up h2 {
         font-size: 1.4em;
     }
 }
 
 @media screen and (max-width: 600px) {
+
     /* Place the timelime to the left */
     .timeline::after {
         left: 31px;
     }
+
     /* Full-width containers */
     .container {
         width: 100%;
         padding-left: 70px;
         padding-right: 25px;
     }
+
     /* Make sure that all arrows are pointing leftwards */
     .container::before {
         left: 60px;
@@ -519,11 +555,13 @@ footer h2 {
         border-width: 10px 10px 10px 0;
         border-color: transparent rgba(255, 255, 255, 0.205) transparent transparent;
     }
+
     /* Make sure all circles are at the same spot */
     .left::after,
     .right::after {
         left: 15px;
     }
+
     /* Make all right containers behave like the left ones */
     .right {
         left: 0%;
@@ -531,16 +569,19 @@ footer h2 {
 }
 
 @media screen and (max-width: 350px) {
+
     /* Place the timelime to the left */
     .timeline::after {
         left: 15px;
     }
+
     /* Full-width containers */
     .container {
         width: 100%;
         padding-left: 55px;
         padding-right: 0px;
     }
+
     /* Make sure that all arrows are pointing leftwards */
     .container::before {
         left: 45px;
@@ -548,11 +589,13 @@ footer h2 {
         border-width: 10px 10px 10px 0;
         border-color: transparent rgba(255, 255, 255, 0.205) transparent transparent;
     }
+
     /* Make sure all circles are at the same spot */
     .left::after,
     .right::after {
         left: 0px;
     }
+
     /* Make all right containers behave like the left ones */
     .right {
         left: 0%;
